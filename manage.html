@@ -1,0 +1,382 @@
+<!doctype html>
+
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="assets/dist/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Manage students</title>
+    <link rel="shortcut icon" href="assets/Img/mylogo3.png">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/dist/css/home.css" rel="stylesheet">
+    <link href="assets/dist/css/carousel.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <header data-bs-theme="dark">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="index.html">Sri Lanka Institute of Information Technology</a>
+
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#programs">Programs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#search">Students</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <button class="btn btn-primary">Login</button>&nbsp;&nbsp;
+
+                        <a href="manage.html">
+                            <button class="btn btn-danger">Admin</button>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
+
+    <div class="modal fade" id="updateStudentModal" tabindex="-1" role="dialog" aria-labelledby="updateStudentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateStudentModalLabel">Update student profile</h5>
+                    
+                </div>
+                <div class="modal-body">
+                    <form id="updateStudentForm">
+                        <div class="row">
+                            <div class="col">
+
+                                <div class="mb-3"> 
+                                    <input type="text" class="form-control" id="SId" name="sid" placeholder="SID">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="FirstName" name="FirstName"
+                                        placeholder="First Name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="LastName" name="LastName"
+                                        placeholder="Last Name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="Guardian" name="Guardian"
+                                        placeholder="Guardian">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="NearCity" name="NearCity"
+                                        placeholder="Nearest City">
+                                </div>
+
+                            </div>
+    
+                            <div class="col">
+
+                                <div class="mb-3">
+                                    <label class="form-label">Select student course</label>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Course[]" value="Degree"
+                                            id="Degree">
+                                        <label class="form-check-label" for="Degree">Degree</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Course[]" value="Foundation"
+                                            id="Foundation">
+                                        <label class="form-check-label" for="Foundation">Foundation</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Course[]" value="HND"
+                                            id="HND">
+                                        <label class="form-check-label" for="HND">HND</label>
+                                    </div>
+
+                                </div>
+    
+    
+                                <div class="mb-3">
+                                    <label class="form-label">Select student subjects</label>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Subjects[]" value="SE"
+                                            id="SE">
+                                        <label class="form-check-label" for="SE">SE</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Subjects[]" value="ORDBMS"
+                                            id="ORDBMS">
+                                        <label class="form-check-label" for="ORDBMS">ORDBMS</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Subjects[]" value="OOP"
+                                            id="OOP">
+                                        <label class="form-check-label" for="OOP">OOP</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Subjects[]" value="ETF"
+                                            id="ETF">
+                                        <label class="form-check-label" for="ETF">ETF</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Subjects[]" value="HCI"
+                                            id="HCI">
+                                        <label class="form-check-label" for="HCI">HCI</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Subjects[]" value="IP"
+                                            id="IP">
+                                        <label class="form-check-label" for="IP">IP</label>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="submitUpdate">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="container-sm">
+        <h1 class="text-center">Student Record Management System</h1>
+        <hr><br>
+        
+        <table class="table table-bordered table-hover">
+            
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">SID</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Nearest city</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Guardian</th>
+                    <th scope="col">Subjects</th>
+                    <th scope="col" colspan="2">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- ajax will add new rows here -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <br>
+    <center><a href="AddStudent.html" class="btn btn-success">Add new student</a></center>
+
+    
+    <script>
+
+        $.ajax({
+            url: 'http://localhost:3000/student',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                var tbody = $('tbody');
+
+                data.forEach(function(item) {
+
+                    var row = $('<tr>');
+                    row.append($('<td>').text(item.sid));
+                    row.append($('<td>').text(item.FirstName));
+                    row.append($('<td>').text(item.LastName));
+                    row.append($('<td>').text(item.Email));
+                    row.append($('<td>').text(item.NearCity));
+                    row.append($('<td>').text(item.Course.join(', ')));
+                    row.append($('<td>').text(item.Guardian));
+                    row.append($('<td>').text(item.Subjects.join(', ')));
+
+                    // update btn
+                    var update_btn = $('<button>').text('Update').addClass('btn btn-primary update-button');
+                    row.append($('<td>').append(update_btn));
+
+                    // delete btn
+                    var delete_btn = $('<button>').text('Delete').addClass('btn btn-danger delete-button');
+                    row.append($('<td>').append(delete_btn));
+
+                    tbody.append(row);
+                });
+
+                // Event handler update btn
+                $('.update-button').click(function() {
+
+                    var row = $(this).closest('tr');
+
+                    var sid = row.children().first().text();
+
+                    $('#updateStudentForm input[name="sid"]').val(sid);
+                    $('#updateStudentForm input[name="FirstName"]').val(row.children().eq(1).text());
+                    $('#updateStudentForm input[name="LastName"]').val(row.children().eq(2).text());
+                    $('#updateStudentForm input[name="Email"]').val(row.children().eq(3).text());
+                    $('#updateStudentForm input[name="NearCity"]').val(row.children().eq(4).text());
+                    $('#updateStudentForm input[name="Guardian"]').val(row.children().eq(6).text());
+
+                    var course_data = row.children().eq(5).text().split(', ');
+                    var subjects_data = row.children().eq(7).text().split(', ');
+
+
+                    $('#updateStudentForm input[name="Course[]"]').each(function() {
+
+                        if (course_data.includes($(this).val())) {
+                            $(this).prop('checked', true);
+                        }
+                        
+                        else {
+                            $(this).prop('checked', false);
+                        }
+                    });
+
+                    $('#updateStudentForm input[name="Subjects[]"]').each(function() {
+
+                        if (subjects_data.includes($(this).val())) {
+                            $(this).prop('checked', true);
+                        }
+                        
+                        else {
+                            $(this).prop('checked', false);
+                        }
+                    });
+
+                    // Show modal
+                    $('#updateStudentModal').modal('show');
+                });
+
+                // Event handler submit btn
+                $('#submitUpdate').click(function() {
+                    var updatedStudent = {
+                        // Get the updated student data from the form
+                        sid: $('#updateStudentForm input[name="sid"]').val(),
+                        FirstName: $('#updateStudentForm input[name="FirstName"]').val(),
+                        LastName: $('#updateStudentForm input[name="LastName"]').val(),
+                        Email: $('#updateStudentForm input[name="Email"]').val(),
+                        NearCity: $('#updateStudentForm input[name="NearCity"]').val(),
+                        Guardian: $('#updateStudentForm input[name="Guardian"]').val()
+                    };
+
+                    updatedStudent.Course = $('#updateStudentForm input[name="Course[]"]:checked').map(function() {
+                        return $(this).val();
+                    }).get();
+
+                    updatedStudent.Subjects = $('#updateStudentForm input[name="Subjects[]"]:checked').map(function() {
+                        return $(this).val();
+                    }).get();
+
+                    $.ajax({
+
+                        url: 'http://localhost:3000/student/' + updatedStudent.sid,
+                        type: 'PUT',
+                        data: updatedStudent,
+                        success: function(response) {
+                            console.log(response);
+
+                            alert("Updated student");
+                            $('#updateStudentModal').modal('hide'); // Hide modal
+                            location.reload();
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.error('Error: ' + errorThrown);
+                        }
+                    });
+                });
+
+                // Event handler delete btn
+                $('.delete-button').click(function() {
+                    var sid = $(this).closest('tr').children().first().text();
+                    $.ajax({
+                        url: 'http://localhost:3000/student/' + sid,
+                        type: 'DELETE',
+                        success: function(response) {
+                            console.log(response);
+
+                            alert("Deleted student");
+                            location.reload();
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.error('Error: ' + errorThrown);
+                        }
+                    });
+                });
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('Error: ' + errorThrown);
+            }
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+    <br><br>
+    <hr>
+    <center><footer class="container" style="color: #949494;">
+        <p class="float-end"><a href="#" style="text-decoration: none; font-size: 25px;">▲</a></p>
+        <p>Copyright © 2024 ETF Assignment 2 - Group F</p>
+        <p>SLIIT - Student Record Management System</p>
+    </footer></center>
+    
+</body>
+</html>

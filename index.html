@@ -1,0 +1,501 @@
+<!doctype html>
+
+<html lang="en" data-bs-theme="auto">
+
+  <head><script src="assets/dist/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>SLIIT University</title>
+    <link rel="shortcut icon" href="assets/Img/mylogo3.png">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/dist/css/home.css" rel="stylesheet">
+    <link href="assets/dist/css/carousel.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+      .clicked {
+        color: #0051ff;
+        padding-bottom: 50px;
+        transition: 0.5s ease;
+      }
+
+      .para-jq {
+        color: rgb(255, 221, 0);
+        padding-right: 50px;
+        transition: 0.5s ease;
+      }
+
+      .faculty-jq {
+        color: rgb(255, 221, 0);
+        padding-top: 50px;
+        transition: 0.5s ease;
+      }
+
+      .faculty-img {
+        padding: 50px;
+        transition: 0.5s ease;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".featurette-heading, .text-body-secondary").click(function(){
+          $(this).toggleClass("clicked");
+        });
+      });
+
+      $(document).ready(function(){
+        $(".lead").click(function(){
+          $(this).toggleClass("para-jq");
+        });
+      });
+
+      $(document).ready(function(){
+        $(".fw-normal").click(function(){
+          $(this).toggleClass("faculty-jq");
+        });
+      });
+
+      $(document).ready(function(){
+        $(".row").click(function(){
+          $(this).toggleClass("faculty-img");
+        });
+      });
+
+      
+
+      //jQ for form show and hide
+      $(document).ready(function(){
+      $("#btn2").click(function(){
+        $(".contactForm").fadeOut();
+      });
+      $("#btn3").click(function(){
+        $(".contactForm").fadeIn();
+      });
+      });
+
+    </script>
+
+  </head>
+
+  
+<body>
+    
+  <header data-bs-theme="dark">
+      
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="#">Sri Lanka Institute of Information Technology</a>
+
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#programs">Programs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#search">Students</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <button class="btn btn-primary">Login</button>&nbsp;&nbsp;
+
+            <a href="manage.html">
+                <button class="btn btn-danger">Admin</button>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+
+      <!-- Carosel btns -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="assets/Img/b10.jpg" style="width: 100%;">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 style="color: white; font-size: 80px;">Exciting Opportunities.</h1>
+              <p class="opacity-75" style="color: white;">Explore a World of Possibilities with Diverse Academic Programs, Internships, and Study Abroad Opportunities.</p>
+              <p><a class="btn btn-lg btn-primary" href="#programs">See courses</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/Img/b11.jpg" style="width: 100%;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="color: white; font-size: 80px;">Cutting-edge Research.</h1>
+              <p class="opacity-75" style="color: white;">Pioneering Breakthroughs in Science and Technology through Innovative Research Initiatives and Collaborations.</p>
+              <p><a class="btn btn-lg btn-primary" href="#faculty-sec">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/Img/b2.jpg" style="width: 100%;">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 style="color: white; font-size: 80px;">Community Engagement.</h1>
+              <p class="opacity-75" style="color: white;">Making a Positive Impact by Engaging with Local and Global Communities through Volunteer Programs and Outreach Efforts.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <div class="container marketing" id="faculty-sec">
+
+      <!-- Faculties -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/Img/b5.jpg" style="border-radius: 100px;">
+          <h2 class="fw-normal">Computing</h2>
+          <p>Our Computing Faculty is comprised of passionate experts dedicated to shaping the next generation of tech innovators.</p>
+          <p><a class="btn btn-outline-light" href="#">View details &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="assets/Img/b6.jpg" style="border-radius: 100px;">
+          <h2 class="fw-normal">Engineering</h2>
+          <p>Welcome to the Engineering Faculty, where creativity meets precision and innovation thrives.</p>
+          <p><a class="btn btn-outline-light" href="#">View details &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="assets/Img/b5.jpg" style="border-radius: 100px;">
+          <h2 class="fw-normal">Medical</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a class="btn btn-outline-light" href="#">View details &raquo;</a></p>
+        </div>
+
+      </div>
+
+
+      <!-- About us -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="about">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Get to know us. <span class="text-body-secondary">About us and our journey.</span></h2><br>
+          <p class="lead">Welcome to our university! We're not just a place of learning; we're a community dedicated to shaping tomorrow's leaders, thinkers, and innovators. With a commitment to excellence in education and a passion for fostering personal growth, we provide a dynamic environment where students can thrive academically and personally. Every aspect of our university is geared towards helping you reach your fullest potential.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="assets/Img/b8.png" style="border-radius: 20px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Our mission & vision. <span class="text-body-secondary">This is our mission and vision</span></h2>
+          <p class="lead">To create a learning and research environment with best possible resources for our students and staff to be innovative and dedicated to excellence and to produce graduates with strong analytical, problem solving and communication skills.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="assets/Img/b4.jpg" style="width: 520px; height: 500px; border-radius: 20px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div>
+
+
+    <div class="container-sm" id="search">
+      <form id="form">
+          <h1 class="text-center" style="padding-top: 10px;">SLIIT University student profile search</h1>
+          <p class="text-center">Search for specific student records based on various criteria, such as name, course enrollment, or other available fields.</p>
+          <br>
+
+          <div class="input-group mb-3">
+
+              <select class="form-select" id="searchType">
+                  <option value="FirstName">First name</option>
+                  <option value="LastName">Last name</option>
+                  <option value="Course">Course</option>
+                  <option value="sid">SID</option>
+                  <option value="Email">Email</option>
+                  <option value="Guardian">Guardian</option>
+                  <option value="NearCity">Nearest city</option>
+              </select>
+              
+              <input type="text" id="searchValue" class="form-control" aria-label="Text input with dropdown button">
+              <button class="btn btn-success" id="submit-btn" type="submit">Search</button>
+          </div>
+      </form>
+    </div>
+
+    <div class="container-sm">
+        
+        <table class="table table-bordered table-hover" id="student-tbl" style="display: none;">
+            <hr>
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">SID</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Nearest city</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Guardian</th>
+                    <th scope="col">Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- rows will be added here when updated (ajax) keep this empty -->
+            </tbody>
+        </table>
+
+    </div>
+  
+  
+
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-sm-6">
+              <div class="card text-bg-dark mb-3">
+                  <a href="manage.html" class="btn btn-primary">View all students</a>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card text-bg-dark mb-3">
+                  <a href="manage.html" class="btn btn-danger">Manage records</a>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+      
+        $("button").click(function () {
+            $("#student-details").hide();
+            $("#error").hide();
+        });
+    
+        
+        $("#submit-btn").click(function (event) {
+            event.preventDefault();
+    
+            var searchType = $("#searchType").val();
+            var searchValue = $("#searchValue").val();
+    
+            $("tbody").empty();
+    
+            $.ajax({
+                url: "/search",
+                method: "POST",
+                data: JSON.stringify({ searchType: searchType, searchValue: searchValue }),
+                contentType: 'application/json',
+    
+                success: function (response) {
+                    if (response.found) {
+                        var tbody = $("tbody");
+                        var row = $('<tr>');
+    
+                        row.append($('<td>').text(response.student.sid));
+                        row.append($('<td>').text(response.student.FirstName));
+                        row.append($('<td>').text(response.student.LastName));
+                        row.append($('<td>').text(response.student.Email));
+                        row.append($('<td>').text(response.student.NearCity));
+                        row.append($('<td>').text(response.student.Course));
+                        row.append($('<td>').text(response.student.Guardian));
+                        row.append($('<td>').text(response.student.Subjects));
+                        tbody.append(row);
+    
+                        console.log(response);
+                        $("#student-tbl").show();
+                    }
+                },
+    
+                error: function () {
+                    $("#error").show();
+                }
+            });
+        });
+    </script>
+  
+    
+
+    <br><br><br><br>
+    <hr>
+
+    <!-- Programs -->
+    <div class="container">
+      <h2 id="programs">Degree Programs</h2>          
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Level</th>
+            <th>Faculty</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Bachelor of Science in Computer Science</td>
+            <td>Hons</td>
+            <td>Computing</td>
+            <td>4 years</td>
+          </tr>
+
+          <tr>
+            <td>Bachelor of Science in Biomedical Science</td>
+            <td>Hons</td>
+            <td>Medical</td>
+            <td>5 years</td>
+          </tr>
+
+          <tr>
+            <td>Bachelor of Science in Civil Engineering</td>
+            <td>Hons</td>
+            <td>Engineering</td>
+            <td>4 years</td>
+          </tr>
+
+          <tr>
+            <td>Bachelor of Science in Civil Engineering</td>
+            <td>Hons</td>
+            <td>Engineering</td>
+            <td>4 years</td>
+          </tr>
+
+          <tr>
+            <td>Bachelor of Arts in English Literature</td>
+            <td>Hons</td>
+            <td>Humanities</td>
+            <td>3 years</td>
+          </tr>
+
+          <tr>
+            <td>Bachelor of Business Administration</td>
+            <td>Hons</td>
+            <td>Business</td>
+            <td>4 years</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    
+
+    <!-- jQ btns for contact form -->
+    <div class="col-lg-6 col-xxl-4 my-5 mx-auto" id="contact">
+      <div class="d-grid gap-2">
+          <button id="btn3" class="btn btn-success" type="button">Show contact form</button>
+          <button id="btn2" class="btn btn-outline-light" type="button">Hide contact form</button>
+      </div>
+    </div>
+
+    <form class="contactForm" style="padding-left: 80px;">
+      <h2 id="programs">Contact Us</h2><br>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div><br>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div><br>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Subject</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message">
+      </div><br>
+
+      <div class="form-group">
+        <label for="exampleTextarea">Textarea</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div><br>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check this option</label>
+      </div><br>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br><br>
+    <hr>
+    <center><footer class="container" style="color: #949494;">
+        <p class="float-end"><a href="#" style="text-decoration: none; font-size: 25px;">▲</a></p>
+        <p>Copyright © 2024 ETF Assignment 2 - Group F</p>
+        <p>SLIIT - Student Record Management System</p>
+    </footer></center>
+
+  </main>
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

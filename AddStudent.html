@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="assets/dist/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Add students</title>
+    <link rel="shortcut icon" href="assets/Img/mylogo3.png">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/dist/css/home.css" rel="stylesheet">
+    <link href="assets/dist/css/carousel.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <header data-bs-theme="dark">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="index.html">Sri Lanka Institute of Information Technology</a>
+
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#programs">Programs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="manage.html">Students</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <button class="btn btn-primary">Login</button>&nbsp;&nbsp;
+
+                        <a href="manage.html">
+                            <button class="btn btn-danger">Admin</button>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <br><br>
+    <div class="container-sm">
+        <h2>
+            Enter new student to system
+        </h2>
+    </div>
+    <br>
+
+    <div class="container-sm">
+        
+        <form id="form_student">
+            <div class="row">
+                <div class="col">
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="SId" name="sid" placeholder="SID" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="Guardian" name="Guardian" placeholder="Guardian" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="NearCity" name="NearCity" placeholder="Nearest City" required>
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+
+                        <label class="form-label">Select student course</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Course[]" value="Degree" id="Degree">
+                            <label class="form-check-label" for="Degree">Degree</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Course[]" value="Foundation" id="Foundation">
+                            <label class="form-check-label" for="Foundation">Foundation</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Course[]" value="HND" id="HND">
+                            <label class="form-check-label" for="HND">HND</label>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label">Select student subjects</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Subjects[]" value="HCI" id="HCI">
+                            <label class="form-check-label" for="HCI">HCI</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Subjects[]" value="ORDBMS" id="ORDBMS">
+                            <label class="form-check-label" for="ORDBMS">ORDBMS</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Subjects[]" value="ETF" id="ETF">
+                            <label class="form-check-label" for="ETF">ETF</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Subjects[]" value="SE" id="SE">
+                            <label class="form-check-label" for="SE">SE</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Subjects[]" value="OOP" id="OOP">
+                            <label class="form-check-label" for="OOP">OOP</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Subjects[]" value="IP" id="IP">
+                            <label class="form-check-label" for="IP">IP</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+    <br><br>
+    <center><a href="manage.html" class="btn btn-primary">View all students</a></center>
+
+
+    <script>
+
+        $('#form_student').on('submit', function (e) {
+
+            e.preventDefault();
+            var from_data = $(this).find(":input:not(:checkbox), :checkbox:checked").serializeArray();
+
+            var sid = from_data.find(field => field.name === 'sid').value;
+
+
+            $.ajax({
+
+                url: 'http://localhost:3000/student',
+                type: 'GET',
+                success: function (data) {
+                    var present_sid = data.map(student => student.sid);
+
+                    if (present_sid.includes(sid)) {
+                        alert('SID already exists');
+                    }
+                    
+                    else {
+
+                        $.ajax({
+                            url: 'http://localhost:3000/student',
+                            type: 'POST',
+                            data: $.param(from_data),
+                            success: function (data) {
+                                alert("Added new student");
+                                
+                                $('#form_student')[0].reset();
+                                $('#alertContainer').html('<div class="alert alert-success" role="alert">Data has been successfully added to the database</div>'); // Show success alert
+                            },
+
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.error('Error: ' + errorThrown);
+                            }
+
+                        });
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.error('Error: ' + errorThrown);
+                }
+            });
+        });
+    </script>
+
+    
+
+    <br><br>
+    <hr>
+    <center><footer class="container" style="color: #949494;">
+        <p class="float-end"><a href="#" style="text-decoration: none; font-size: 25px;">▲</a></p>
+        <p>Copyright © 2024 ETF Assignment 2 - Group F</p>
+        <p>SLIIT - Student Record Management System</p>
+    </footer></center>
+</body>
+
+</html>

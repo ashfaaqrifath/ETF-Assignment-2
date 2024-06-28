@@ -1,0 +1,119 @@
+[
+  {
+    "sid": "001",
+    "FirstName": "Ashfaaq",
+    "LastName": "Rifath",
+    "Email": "ashfaaq.rifath2@gmail.com",
+    "NearCity": "Colombo",
+    "Guardian": "Rifath Mansoor",
+    "Course": [
+      "HND"
+    ],
+    "Subjects": [
+      "ORDBMS",
+      "ETF",
+      "HCI"
+    ]
+  },
+  {
+    "sid": "002",
+    "FirstName": "Sandun",
+    "LastName": "Gamage",
+    "Email": "sindun@gmail.com",
+    "NearCity": "Thissamarama",
+    "Guardian": "Dutugamunu",
+    "Course": [
+      "Degree",
+      "HND"
+    ],
+    "Subjects": [
+      "OOP",
+      "ETF",
+      "IP"
+    ]
+  },
+  {
+    "sid": "003",
+    "FirstName": "Kaveesha",
+    "LastName": "Dilanjan",
+    "Email": "cockroach@gmail.com",
+    "NearCity": "Kaluthara",
+    "Guardian": "Anura Kumara",
+    "Course": [
+      "Foundation",
+      "HND"
+    ],
+    "Subjects": [
+      "SE",
+      "ETF"
+    ]
+  },
+  {
+    "sid": "004",
+    "FirstName": "Chanuka",
+    "LastName": "Bandara",
+    "Email": "channa@gmail.com",
+    "NearCity": "Moratuwa",
+    "Guardian": "Ravikantha",
+    "Course": [
+      "Degree",
+      "Foundation"
+    ],
+    "Subjects": [
+      "SE",
+      "OOP",
+      "ETF"
+    ]
+  },
+  {
+    "sid": "005",
+    "FirstName": "Rashen",
+    "LastName": "Tharaka",
+    "Email": "family.man@gmail.com",
+    "NearCity": "Galle",
+    "Guardian": "Jane Smith",
+    "Course": [
+      "Foundation",
+      "HND"
+    ],
+    "Subjects": [
+      "ETF",
+      "HCI"
+    ]
+  },
+  {
+    "sid": "006",
+    "FirstName": "John",
+    "LastName": "Doe",
+    "Email": "johnd@gmail.com",
+    "NearCity": "Polonnaruwa",
+    "Guardian": "Jonny Doe",
+    "Course": [
+      "Degree",
+      "Foundation"
+    ],
+    "Subjects": [
+      "SE",
+      "ORDBMS",
+      "ETF",
+      "HCI"
+    ]
+  },
+  {
+    "sid": "007",
+    "FirstName": "James",
+    "LastName": "Bond",
+    "Email": "bond@gmail.com",
+    "NearCity": "London",
+    "Guardian": "John wick",
+    "Course": [
+      "Degree",
+      "HND"
+    ],
+    "Subjects": [
+      "OOP",
+      "HCI",
+      "IP"
+    ]
+  }
+]
